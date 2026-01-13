@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小熊·UI设计 - 作品集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 横幅区域（结构完整，无删减） -->
+  <div class="header-banner">
+    <h1>小熊·UI设计</h1>
+    <p>UI/UX设计作品展示 - 专属3D交互动画</p>
+  </div>
+
+  <!-- 导航栏（完整栏目，无删减） -->
+  <div class="nav-bar" id="navBar">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">小狗·首页</a>
+      </li>
+      <li class="nav-item">
+        <a href="vector.html" class="nav-link">小猫·矢量设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="audio.html" class="nav-link">小兔·音频设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="aftereffects.html" class="nav-link">松鼠·AE设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="ui.html" class="nav-link active">小熊·UI设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="video.html" class="nav-link">小鹿·视频剪辑</a>
+      </li>
+      <li class="nav-item">
+        <a href="contact.html" class="nav-link">小鸭·联系我</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 内容容器（结构完整，无删减） -->
+  <div class="container">
+    <div class="card">
+      <h2>UI/UX设计作品集</h2>
+      <p>UI作品1：电商APP首页设计，采用卡片式布局+渐变色彩体系，适配iOS/Android双端，包含完整交互逻辑。</p>
+      <div class="ui-prototype" data-name="电商APP"></div>
+      
+      <p>UI作品2：智能家居小程序设计，极简风格+手势交互，支持暗黑模式切换，适配多尺寸屏幕。</p>
+      <div class="ui-prototype" data-name="智能家居小程序"></div>
+      
+      <p>UI作品3：企业官网改版设计，响应式布局+微交互动效，提升用户停留时长30%+，降低跳出率25%。</p>
+      <div class="ui-prototype" data-name="企业官网"></div>
+    </div>
+  </div>
+
+  <!-- 页脚（结构完整，无删减） -->
+  <div class="footer">
+    <p>© 2026 全内嵌动效作品集 - UI设计页</p>
+  </div>
+
+  <!-- 导航栏滚动动画JS（结构保留） -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const navBar = document.getElementById('navBar');
+      if (window.scrollY > 50) {
+        navBar.classList.add('scrolled');
+      } else {
+        navBar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
