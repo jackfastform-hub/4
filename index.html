@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小狗·首页 - 作品集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 横幅区域（结构完整，无删减） -->
+  <div class="header-banner">
+    <h1>小狗·首页</h1>
+    <p>全内嵌动效作品集 - 核心展示页</p>
+  </div>
+
+  <!-- 导航栏（完整栏目，无删减） -->
+  <div class="nav-bar" id="navBar">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link active">小狗·首页</a>
+      </li>
+      <li class="nav-item">
+        <a href="vector.html" class="nav-link">小猫·矢量设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="audio.html" class="nav-link">小兔·音频设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="aftereffects.html" class="nav-link">松鼠·AE设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="ui.html" class="nav-link">小熊·UI设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="video.html" class="nav-link">小鹿·视频剪辑</a>
+      </li>
+      <li class="nav-item">
+        <a href="contact.html" class="nav-link">小鸭·联系我</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 内容容器（结构完整，无删减） -->
+  <div class="container">
+    <div class="card">
+      <h2>作品集简介</h2>
+      <p>本作品集网站所有动效均通过代码内嵌实现，无任何外部文件依赖。导航栏配备多层交互动画，每个栏目均有专属定制动画效果，视频内容采用外部链接加载，确保网站加载速度快且交互体验流畅。</p>
+      <p>网站适配移动端与桌面端，所有交互动画均经过性能优化，无卡顿、无延迟，兼顾视觉效果与使用体验。</p>
+      <!-- 首页图片（CSS绘制占位，无外部文件，结构保留） -->
+      <div class="home-img"></div>
+      <p>你可根据需求替换CSS中的占位样式，或添加自定义的内嵌动效，所有修改均无需依赖外部资源。</p>
+    </div>
+  </div>
+
+  <!-- 页脚（结构完整，无删减） -->
+  <div class="footer">
+    <p>© 2026 全内嵌动效作品集 - 首页</p>
+  </div>
+
+  <!-- 导航栏滚动动画JS（内嵌，结构保留） -->
+  <script>
+    // 导航栏滚动收缩动画
+    window.addEventListener('scroll', function() {
+      const navBar = document.getElementById('navBar');
+      if (window.scrollY > 50) {
+        navBar.classList.add('scrolled');
+      } else {
+        navBar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
