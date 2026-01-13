@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小鹿·视频剪辑 - 作品集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 横幅区域（结构完整，无删减） -->
+  <div class="header-banner">
+    <h1>小鹿·视频剪辑</h1>
+    <p>视频剪辑作品展示 - 专属滑入交互动画</p>
+  </div>
+
+  <!-- 导航栏（完整栏目，无删减） -->
+  <div class="nav-bar" id="navBar">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">小狗·首页</a>
+      </li>
+      <li class="nav-item">
+        <a href="vector.html" class="nav-link">小猫·矢量设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="audio.html" class="nav-link">小兔·音频设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="aftereffects.html" class="nav-link">松鼠·AE设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="ui.html" class="nav-link">小熊·UI设计</a>
+      </li>
+      <li class="nav-item">
+        <a href="video.html" class="nav-link active">小鹿·视频剪辑</a>
+      </li>
+      <li class="nav-item">
+        <a href="contact.html" class="nav-link">小鸭·联系我</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 内容容器（结构完整，无删减） -->
+  <div class="container">
+    <div class="card">
+      <h2>视频剪辑作品集</h2>
+      
+      <div class="video-clip-item">
+        <div class="video-clip-thumb"></div>
+        <div class="video-clip-desc">
+          <h3>短视频作品1：产品宣传短片</h3>
+          <p>时长：45秒，风格：快节奏+动态转场，使用PR/AE制作，适配抖音/视频号等平台，播放量10W+。</p>
+        </div>
+      </div>
+      
+      <div class="video-clip-item">
+        <div class="video-clip-thumb"></div>
+        <div class="video-clip-desc">
+          <h3>长视频作品2：纪录片剪辑</h3>
+          <p>时长：15分钟，风格：纪实+舒缓配乐，使用PR/达芬奇调色，获地方影视节最佳剪辑提名。</p>
+        </div>
+      </div>
+      
+      <div class="video-clip-item">
+        <div class="video-clip-thumb"></div>
+        <div class="video-clip-desc">
+          <h3>动画作品3：MG动画短片</h3>
+          <p>时长：2分钟，风格：扁平化MG动画，使用AE/PS制作，为企业定制的品牌科普短片。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页脚（结构完整，无删减） -->
+  <div class="footer">
+    <p>© 2026 全内嵌动效作品集 - 视频剪辑页</p>
+  </div>
+
+  <!-- 导航栏滚动动画JS（结构保留） -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const navBar = document.getElementById('navBar');
+      if (window.scrollY > 50) {
+        navBar.classList.add('scrolled');
+      } else {
+        navBar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
